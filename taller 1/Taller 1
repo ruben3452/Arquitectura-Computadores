@@ -1,0 +1,49 @@
+Taller 1 
+
+Este taller consiste en mejorar las habilidades de los conceptos aprendidos en clase.
+
+
+1. Implemente en VHDL un FlipFlop de 1bit, con entradas D, Reset, CLK, y una salida Dout.
+		____________
+D-------|		   |	
+		|		   |	
+RST-----|		   |_______Dout	
+		|		   |
+CLK-----|>		   |
+		|__________|
+
+2. Escriba los 4 principios de diseño de hardware aprendidos en clase.
+
+3. Convertir a instrucciones de bajo nivel.
+
+int x=0; 
+int y =8; 
+int z = 1; 
+
+y=x+3;
+z=z+3;
+x=(x-z)+(3+y);
+
+4. Usar el ld, y st.
+a[4]= a[2]+x;
+y = y[40]+13;
+
+5. Convertir a lenguaje de maquina.
+a.
+int main(){
+	
+	int i =3; p=2;
+	return i+3;
+}
+
+b.
+int main(){
+	int p=3; x=1; z=4;
+	int w=0; 
+	w=(p+40)+(x-z);
+	return 0; 
+}
+
+
+
+

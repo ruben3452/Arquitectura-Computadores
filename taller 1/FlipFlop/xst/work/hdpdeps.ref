@@ -1,0 +1,11 @@
+V3 5
+FL "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/pc.vhd" 2016/03/31.19:17:01 P.20131013
+AR work/PC/FlipFlop 1459469840 \
+      FL "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/pc.vhd" \
+      EN work/PC 1459469839
+EN work/ProgramCounter 0 \
+      FL "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/pc.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/ProgramCounter/Behavioral 0 \
+      FL "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/pc.vhd" \
+      EN work/ProgramCounter 0

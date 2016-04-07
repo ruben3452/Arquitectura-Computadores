@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop_isim_beh.exe" -prj "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop_beh.prj" "work.TBFlipFlop" 

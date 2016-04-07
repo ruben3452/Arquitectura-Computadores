@@ -1,0 +1,13 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop_isim_beh.exe -prj /home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop_beh.prj work.TBFlipFlop 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/pc.vhd" into library work
+Parsing VHDL file "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop.vhd" into library work
+ERROR:HDLCompiler:303 - "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop.vhd" Line 89: Character '1' is not in type std_logic_vector
+ERROR:HDLCompiler:303 - "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop.vhd" Line 92: Character '0' is not in type std_logic_vector
+ERROR:HDLCompiler:303 - "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop.vhd" Line 94: Character '1' is not in type std_logic_vector
+ERROR:HDLCompiler:303 - "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop.vhd" Line 96: Character '0' is not in type std_logic_vector
+ERROR:HDLCompiler:854 - "/home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop.vhd" Line 38: Unit <behavior> ignored due to previous errors.
+VHDL file /home/alucard/Arquitectura-Computadores/taller 1/FlipFlop/TBFlipFlop.vhd ignored due to errors
