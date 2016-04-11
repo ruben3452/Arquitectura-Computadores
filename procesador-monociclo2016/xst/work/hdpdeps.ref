@@ -8,9 +8,9 @@ AR work/instructionMemory/arqInstructionMemory 1460058742 \
       FL "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" \
       EN work/instructionMemory 1460058741
 FL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" 2016/04/07.14:40:19 P.20131013
-EN work/Sumador 1460058386 \
+EN work/Sumador 1460075071 \
       FL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Sumador/Behavioral 1460058387 \
+AR work/Sumador/Behavioral 1460075072 \
       FL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" \
-      EN work/Sumador 1460058386
+      EN work/Sumador 1460075071

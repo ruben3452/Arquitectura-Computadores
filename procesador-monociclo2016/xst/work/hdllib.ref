@@ -1,4 +1,4 @@
-AR sumador behavioral "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl01 1460058387
+AR sumador behavioral "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl01 1460075072
 AR instructionmemory arqinstructionmemory "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" sub00/vhpl03 1460058742
 EN instructionmemory NULL "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" sub00/vhpl02 1460058741
-EN sumador NULL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl00 1460058386
+EN sumador NULL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl00 1460075071
