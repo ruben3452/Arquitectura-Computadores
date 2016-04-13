@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.xst" -ofn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.syr" 
+xst -intstyle ise -ifn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.xst" -ofn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Alu_TB.ngc Alu_TB.ngd  
+xst -intstyle ise -ifn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.xst" -ofn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.syr" 
+xst -intstyle ise -ifn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.xst" -ofn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.syr" 
+xst -intstyle ise -ifn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.xst" -ofn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.syr" 
+xst -intstyle ise -ifn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.xst" -ofn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.syr" 
+xst -intstyle ise -ifn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.xst" -ofn "/home/hinata/iseproyecs/procesador-monociclo2016/Alu_TB.syr" 

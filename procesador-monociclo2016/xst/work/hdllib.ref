@@ -1,4 +1,10 @@
-AR sumador behavioral "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl01 1460075072
 AR instructionmemory arqinstructionmemory "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" sub00/vhpl03 1460058742
+EN cu NULL /home/hinata/iseproyecs/procesador-monociclo2016/CU.vhd sub00/vhpl08 1460475061
+AR alu_tb behavior /home/hinata/iseproyecs/procesador-monociclo2016/AluTB.vhd sub00/vhpl07 1460471324
+AR sumador behavioral "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl01 1460075072
 EN instructionmemory NULL "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" sub00/vhpl02 1460058741
+AR alu behavioral /home/hinata/iseproyecs/procesador-monociclo2016/Alu.vhd sub00/vhpl05 1460473400
 EN sumador NULL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl00 1460075071
+EN alu_tb NULL /home/hinata/iseproyecs/procesador-monociclo2016/AluTB.vhd sub00/vhpl06 1460473401
+AR cu behavioral /home/hinata/iseproyecs/procesador-monociclo2016/CU.vhd sub00/vhpl09 1460475062
+EN alu NULL /home/hinata/iseproyecs/procesador-monociclo2016/Alu.vhd sub00/vhpl04 1460473399
