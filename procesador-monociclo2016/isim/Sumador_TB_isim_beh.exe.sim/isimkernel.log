@@ -2,12 +2,12 @@ Command line:
    Sumador_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  40560
+     -socket  49531
 
-Thu Apr  7 18:41:53 2016
+Tue Apr 19 19:27:25 2016
 
 
- Elaboration Time: 0.1 sec
+ Elaboration Time: 0.09 sec
 
  Current Memory Usage: 131.408 Meg
 
@@ -21,9 +21,9 @@ Thu Apr  7 18:41:53 2016
  Total Scalar Nets and Variables : 474
 Total Line Count : 7
 
- Total Simulation Time: 0.11 sec
+ Total Simulation Time: 0.1 sec
 
  Current Memory Usage: 140.849 Meg
 
-Thu Apr  7 19:36:40 2016
+Tue Apr 19 19:29:41 2016
 

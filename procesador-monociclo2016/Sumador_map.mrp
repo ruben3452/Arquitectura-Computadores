@@ -3,33 +3,45 @@ Xilinx Mapping Report File for Design 'Sumador'
 
 Design Information
 ------------------
-Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
 -c 100 -o Sumador_map.ncd Sumador.ngd Sumador.pcf 
-Target Device  : xc3s500e
-Target Package : fg320
+Target Device  : xc3s100e
+Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Apr  7 14:53:23 2016
+Mapped Date    : Thu Apr 14 19:12:08 2016
+ERROR:Pack:18 - The design is too large for the given device and package. 
+   Please check the Design Summary section to see which resource requirement for
+   your design exceeds the resources available in the device.
+
+   NOTE: An NCD file will still be generated to allow you to examine the mapped
+   design.  This file is intended for evaluation use only, and will not process
+   successfully through PAR.
+
+   This mapped NCD file can be used to evaluate how the design's logic has been
+   mapped into FPGA logic resources.  It can also be used to analyze
+   preliminary, logic-level (pre-route) timing with one of the Xilinx static
+   timing analysis tools (TRCE or Timing Analyzer).
 
 Design Summary
 --------------
-Number of errors:      0
+Number of errors:      2
 Number of warnings:    0
 Logic Utilization:
-  Number of 4 input LUTs:                32 out of   9,312    1%
+  Number of 4 input LUTs:                32 out of   1,920    1%
 Logic Distribution:
-  Number of occupied Slices:             16 out of   4,656    1%
+  Number of occupied Slices:             16 out of     960    1%
     Number of Slices containing only related logic:      16 out of      16 100%
     Number of Slices containing unrelated logic:          0 out of      16   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          32 out of   9,312    1%
-  Number of bonded IOBs:                 96 out of     232   41%
+  Total Number of 4 input LUTs:          32 out of   1,920    1%
+  Number of bonded IOBs:                 96 out of      83  115% (OVERMAPPED)
 
 Average Fanout of Non-Clock Nets:                1.00
 
-Peak Memory Usage:  179 MB
-Total REAL time to MAP completion:  9 secs 
-Total CPU time to MAP completion:   9 secs 
+Peak Memory Usage:  170 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   8 secs 
 
 NOTES:
 
@@ -67,6 +79,19 @@ Section 13 - Utilization by Hierarchy
 
 Section 1 - Errors
 ------------------
+ERROR:Pack:2309 - Too many bonded comps of type "IBUF" found to fit this device.
+ERROR:Pack:18 - The design is too large for the given device and package. 
+   Please check the Design Summary section to see which resource requirement for
+   your design exceeds the resources available in the device.
+
+   NOTE: An NCD file will still be generated to allow you to examine the mapped
+   design.  This file is intended for evaluation use only, and will not process
+   successfully through PAR.
+
+   This mapped NCD file can be used to evaluate how the design's logic has been
+   mapped into FPGA logic resources.  It can also be used to analyze
+   preliminary, logic-level (pre-route) timing with one of the Xilinx static
+   timing analysis tools (TRCE or Timing Analyzer).
 
 Section 2 - Warnings
 --------------------

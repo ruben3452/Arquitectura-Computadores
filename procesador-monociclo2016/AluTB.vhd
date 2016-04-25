@@ -1,4 +1,5 @@
---- Ruben Dario Acuña O
+---Ruben Dario Acuña
+--Andres Felipe Moreno Castañeda
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 

@@ -1,10 +1,18 @@
-AR instructionmemory arqinstructionmemory "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" sub00/vhpl03 1460058742
-EN cu NULL /home/hinata/iseproyecs/procesador-monociclo2016/CU.vhd sub00/vhpl08 1460475061
+AR cu behavioral "/home/alucard/ise proyects/procesador-monociclo2016/CU.vhd" sub00/vhpl09 1461282604
+AR seudisp13 behavioral "/home/alucard/ise proyects/procesador-monociclo2016/SEU.vhd" sub00/vhpl15 1461282735
+AR programcounter behavioral "/home/alucard/ise proyects/procesador-monociclo2016/npc.vhd" sub00/vhpl13 1461282713
+EN cu NULL "/home/alucard/ise proyects/procesador-monociclo2016/CU.vhd" sub00/vhpl08 1461282603
+AR registerfile syn "/home/alucard/ise proyects/procesador-monociclo2016/RF.vhd" sub00/vhpl17 1461282785
+AR alu behavioral "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd" sub00/vhpl05 1461282653
+AR mux behavioral "/home/alucard/ise proyects/procesador-monociclo2016/MUX.vhd" sub00/vhpl11 1461282676
+EN registerfile NULL "/home/alucard/ise proyects/procesador-monociclo2016/RF.vhd" sub00/vhpl16 1461282784
+AR sumador behavioral "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl01 1460679071
+AR instructionmemory arqinstructionmemory "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" sub00/vhpl03 1461282760
+EN instructionmemory NULL "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" sub00/vhpl02 1461282759
 AR alu_tb behavior /home/hinata/iseproyecs/procesador-monociclo2016/AluTB.vhd sub00/vhpl07 1460471324
-AR sumador behavioral "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl01 1460075072
-EN instructionmemory NULL "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" sub00/vhpl02 1460058741
-AR alu behavioral /home/hinata/iseproyecs/procesador-monociclo2016/Alu.vhd sub00/vhpl05 1460473400
-EN sumador NULL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl00 1460075071
-EN alu_tb NULL /home/hinata/iseproyecs/procesador-monociclo2016/AluTB.vhd sub00/vhpl06 1460473401
-AR cu behavioral /home/hinata/iseproyecs/procesador-monociclo2016/CU.vhd sub00/vhpl09 1460475062
-EN alu NULL /home/hinata/iseproyecs/procesador-monociclo2016/Alu.vhd sub00/vhpl04 1460473399
+EN seudisp13 NULL "/home/alucard/ise proyects/procesador-monociclo2016/SEU.vhd" sub00/vhpl14 1461282734
+EN mux NULL "/home/alucard/ise proyects/procesador-monociclo2016/MUX.vhd" sub00/vhpl10 1461282675
+EN programcounter NULL "/home/alucard/ise proyects/procesador-monociclo2016/npc.vhd" sub00/vhpl12 1461282712
+EN sumador NULL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" sub00/vhpl00 1460679070
+EN alu_tb NULL "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd" sub00/vhpl06 1461282632
+EN alu NULL "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd" sub00/vhpl04 1461282652

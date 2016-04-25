@@ -1,0 +1,5 @@
+set -tmpdir "/home/alucard/ise proyects/procesador-monociclo2016/xst/projnav.tmp"
+set -xsthdpdir "/home/alucard/ise proyects/procesador-monociclo2016/xst"
+elaborate
+-ifn instructionMemory.prj
+-ifmt mixed

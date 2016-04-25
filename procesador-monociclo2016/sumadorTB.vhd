@@ -1,4 +1,5 @@
 ---Ruben Dario Acuña
+--Andres Felipe Moreno Castañeda
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
@@ -42,9 +43,7 @@ BEGIN
       Ope1<="00000000000000000000000000000011";
 		Ope2<="00000000000000000000000000000100";
       wait for 100 ns;
-		Ope1<="00000000000000000000000000000111";
-		Ope2<="00000000000000000000000000001001";
-      wait for 100 ns;
+		
 
    end process;
 

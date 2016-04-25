@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (lin64)
+Release 14.7 Trace  (lin)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/home/hinata/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4
--n 3 -fastpaths -xml CU.twx CU.ncd -o CU.twr CU.pcf
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/trce -intstyle ise -v 3 -s 4 -n 3
+-fastpaths -xml CU.twx CU.ncd -o CU.twr CU.pcf
 
 Design file:              CU.ncd
 Physical constraint file: CU.pcf
@@ -100,14 +100,14 @@ Op<1>          |         |         |         |    1.929|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue Apr 12 10:46:45 2016 
+Analysis completed Thu Apr 14 19:00:57 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 333 MB
+Peak Memory Usage: 93 MB
 
 
 

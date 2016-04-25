@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Thu Apr  7 14:53:33 2016">
+  <application stringID="Map" timeStamp="Thu Apr 14 19:12:16 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Atom(TM) CPU N2600   @ 1.60GHz"/>
-          <item stringID="speed" value="1600.000 MHz"/>
+          <item stringID="speed" value="600.000 MHz"/>
         </row>
       </table>
     </section>
@@ -43,33 +43,33 @@
       <item DEFAULT="None" label="-intstyle" stringID="MAP_INTSTYLE" value="ise"/>
       <item DEFAULT="None" label="-o" stringID="MAP_OUTFILE" value="Sumador_map.ncd"/>
       <item DEFAULT="off" label="-pr" stringID="MAP_PACK_INTERNAL" value="off"/>
-      <item DEFAULT="None" label="-p" stringID="MAP_PARTNAME" value="xc3s500e-fg320-4"/>
+      <item DEFAULT="None" label="-p" stringID="MAP_PARTNAME" value="xc3s100e-cp132-4"/>
     </section>
     <task stringID="MAP_PACK_REPORT">
       <section stringID="MAP_DESIGN_INFORMATION">
-        <item stringID="MAP_PART" value="3s500efg320-4"/>
-        <item stringID="MAP_DEVICE" value="xc3s500e"/>
+        <item stringID="MAP_PART" value="3s100ecp132-4"/>
+        <item stringID="MAP_DEVICE" value="xc3s100e"/>
         <item stringID="MAP_ARCHITECTURE" value="spartan3e"/>
-        <item stringID="MAP_PACKAGE" value="fg320"/>
+        <item stringID="MAP_PACKAGE" value="cp132"/>
         <item stringID="MAP_SPEED" value="-4"/>
       </section>
       <section stringID="MAP_DESIGN_SUMMARY">
-        <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="MAP_NUM_ERRORS" value="2"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="183248"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="9 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="9 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="173880"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="8 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="8 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="9312" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="32"/>
-        <item AVAILABLE="4656" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="16">
+        <item AVAILABLE="1920" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="32"/>
+        <item AVAILABLE="960" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="16">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
       <section stringID="MAP_IOB_REPORTING">
         <section stringID="MAP_IOB_DATA">
-          <item AVAILABLE="232" dataType="int" stringID="MAP_AGG_BONDED_IO" value="96"/>
+          <item AVAILABLE="83" dataType="int" stringID="MAP_AGG_BONDED_IO" value="96"/>
         </section>
       </section>
       <section stringID="MAP_HARD_IP_REPORTING"/>

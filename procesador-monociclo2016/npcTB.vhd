@@ -1,10 +1,8 @@
 ---Ruben Dario Acuña
+--Andres Felipe Moreno Castañeda
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
- 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
+
  
 ENTITY ProgramCounter_TB IS
 END ProgramCounter_TB;
@@ -56,12 +54,13 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
+		Rst <= '1';
+		wait for 100 ns;
       Pc_In <= "01010100100010001001010100100100";
       Rst <= '0';
       wait for 100 ns;
 		Pc_In <= "01011101110010101011010100100100";
-      Rst <= '0';
-      wait for 100 ns;
+      
       
    end process;
 

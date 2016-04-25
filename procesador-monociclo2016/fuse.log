@@ -8,7 +8,7 @@ Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/RF-TB.vhd
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 37532 KB
-Fuse CPU Usage: 3050 ms
+Fuse CPU Usage: 3180 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -19,6 +19,6 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
 Built simulation executable /home/alucard/ise proyects/procesador-monociclo2016/registerFile_tb_isim_beh.exe
-Fuse Memory Usage: 90740 KB
-Fuse CPU Usage: 3440 ms
-GCC CPU Usage: 10320 ms
+Fuse Memory Usage: 90708 KB
+Fuse CPU Usage: 3580 ms
+GCC CPU Usage: 1100 ms

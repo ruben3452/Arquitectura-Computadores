@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-12T10:16:33</DateModified>
-  <ModuleName>CU</ModuleName>
+  <DateModified>2016-04-25T14:29:33</DateModified>
+  <ModuleName>Sumador</ModuleName>
   <SummaryTimeStamp>2016-04-12T10:03:20</SummaryTimeStamp>
-  <SavedFilePath>/home/hinata/iseproyecs/procesador-monociclo2016/iseconfig/Sumador.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/hinata/iseproyecs/procesador-monociclo2016/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/alucard/ise proyects/procesador-monociclo2016/iseconfig/Sumador.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/alucard/ise proyects/procesador-monociclo2016/</ImplementationReportsDirectory>
   <DateInitialized>2016-04-12T10:16:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

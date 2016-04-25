@@ -1,34 +1,67 @@
-V3 16
-FL "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" 2016/04/07.14:51:48 P.20131013
-EN work/instructionMemory 1460058741 \
+V3 31
+FL "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd" 2016/04/19.18:30:08 P.20131013
+EN work/Alu 1461282652 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Alu/Behavioral 1461282653 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd" \
+      EN work/Alu 1461282652
+FL "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd" 2016/04/19.18:30:00 P.20131013
+EN work/Alu_TB 1460471323 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Alu_TB/behavior 1460471324 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd" \
+      EN work/Alu_TB 1460471323 CP Alu
+FL "/home/alucard/ise proyects/procesador-monociclo2016/CU.vhd" 2016/04/21.18:49:45 P.20131013
+EN work/CU 1461282603 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/CU.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/CU/Behavioral 1461282604 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/CU.vhd" EN work/CU 1461282603
+FL "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" 2016/04/14.19:53:52 P.20131013
+EN work/instructionMemory 1461282759 \
       FL "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB std/TEXTIO 1381692176
-AR work/instructionMemory/arqInstructionMemory 1460058742 \
+AR work/instructionMemory/arqInstructionMemory 1461282760 \
       FL "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" \
-      EN work/instructionMemory 1460058741
-FL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" 2016/04/07.14:40:19 P.20131013
-EN work/Sumador 1460075071 \
+      EN work/instructionMemory 1461282759
+FL "/home/alucard/ise proyects/procesador-monociclo2016/MUX.vhd" 2016/04/19.18:31:17 P.20131013
+EN work/MUX 1461282675 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/MUX.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX/Behavioral 1461282676 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/MUX.vhd" \
+      EN work/MUX 1461282675
+FL "/home/alucard/ise proyects/procesador-monociclo2016/npc.vhd" 2016/04/19.19:33:42 P.20131013
+EN work/ProgramCounter 1461282712 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/npc.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/ProgramCounter/Behavioral 1461282713 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/npc.vhd" \
+      EN work/ProgramCounter 1461282712
+FL "/home/alucard/ise proyects/procesador-monociclo2016/RF.vhd" 2016/04/19.18:33:03 P.20131013
+EN work/registerFile 1461282784 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/RF.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/registerFile/syn 1461282785 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/RF.vhd" \
+      EN work/registerFile 1461282784
+FL "/home/alucard/ise proyects/procesador-monociclo2016/SEU.vhd" 2016/04/19.18:32:00 P.20131013
+EN work/SEUDisp13 1461282734 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/SEU.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/SEUDisp13/Behavioral 1461282735 \
+      FL "/home/alucard/ise proyects/procesador-monociclo2016/SEU.vhd" \
+      EN work/SEUDisp13 1461282734
+FL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" 2016/04/14.19:09:53 P.20131013
+EN work/Sumador 1460679070 \
       FL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Sumador/Behavioral 1460075072 \
+AR work/Sumador/Behavioral 1460679071 \
       FL "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" \
-      EN work/Sumador 1460075071
+      EN work/Sumador 1460679070
 FL /home/hinata/iseproyecs/procesador-monociclo2016/Alu.vhd 2016/04/12.10:02:25 P.20131013
-EN work/Alu 1460473399 \
-      FL /home/hinata/iseproyecs/procesador-monociclo2016/Alu.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Alu/Behavioral 1460473400 \
-      FL /home/hinata/iseproyecs/procesador-monociclo2016/Alu.vhd EN work/Alu 1460473399
 FL /home/hinata/iseproyecs/procesador-monociclo2016/AluTB.vhd 2016/04/12.09:28:37 P.20131013
-EN work/Alu_TB 1460471323 \
-      FL /home/hinata/iseproyecs/procesador-monociclo2016/AluTB.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/Alu_TB/behavior 1460471324 \
-      FL /home/hinata/iseproyecs/procesador-monociclo2016/AluTB.vhd \
-      EN work/Alu_TB 1460471323 CP Alu
 FL /home/hinata/iseproyecs/procesador-monociclo2016/CU.vhd 2016/04/11.14:47:32 P.20131013
-EN work/CU 1460475061 FL /home/hinata/iseproyecs/procesador-monociclo2016/CU.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/CU/Behavioral 1460475062 \
-      FL /home/hinata/iseproyecs/procesador-monociclo2016/CU.vhd EN work/CU 1460475061

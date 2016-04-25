@@ -1,13 +1,13 @@
 Command line:
    ProgramCounter_TB_isim_beh.exe
      -simmode  gui
-     -simrunnum  0
-     -socket  33402
+     -simrunnum  1
+     -socket  52373
 
-Thu Apr  7 15:00:45 2016
+Tue Apr 19 19:39:59 2016
 
 
- Elaboration Time: 0.09 sec
+ Elaboration Time: 0.08 sec
 
  Current Memory Usage: 131.334 Meg
 
@@ -21,9 +21,9 @@ Thu Apr  7 15:00:45 2016
  Total Scalar Nets and Variables : 427
 Total Line Count : 13
 
- Total Simulation Time: 0.1 sec
+ Total Simulation Time: 0.09 sec
 
  Current Memory Usage: 140.775 Meg
 
-Thu Apr  7 15:00:52 2016
+Tue Apr 19 20:02:33 2016
 

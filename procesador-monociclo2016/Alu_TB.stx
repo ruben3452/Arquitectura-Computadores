@@ -1,0 +1,49 @@
+Release 14.7 - xst P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/alucard/ise proyects/procesador-monociclo2016/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/alucard/ise proyects/procesador-monociclo2016/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/Alu_TB is now defined in a different file.  It was defined in "/home/hinata/iseproyecs/procesador-monociclo2016/AluTB.vhd", and is now defined in "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd".
+WARNING:HDLParsers:3607 - Unit work/Alu_TB/behavior is now defined in a different file.  It was defined in "/home/hinata/iseproyecs/procesador-monociclo2016/AluTB.vhd", and is now defined in "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd".
+WARNING:HDLParsers:3607 - Unit work/Alu is now defined in a different file.  It was defined in "/home/hinata/iseproyecs/procesador-monociclo2016/Alu.vhd", and is now defined in "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd".
+WARNING:HDLParsers:3607 - Unit work/Alu/Behavioral is now defined in a different file.  It was defined in "/home/hinata/iseproyecs/procesador-monociclo2016/Alu.vhd", and is now defined in "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd".
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd" in Library work.
+Entity <alu> compiled.
+Entity <alu> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd" in Library work.
+Entity <alu_tb> compiled.
+ERROR:HDLParsers:1015 - "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd" Line 47. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd" Line 52. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd" Line 56. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "/home/alucard/ise proyects/procesador-monociclo2016/AluTB.vhd" Line 60. Wait for statement unsupported.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> 
+
+
+Total memory usage is 151560 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

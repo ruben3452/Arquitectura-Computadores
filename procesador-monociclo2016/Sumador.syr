@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.23 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.23 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> 
 Reading design: Sumador.prj
@@ -45,7 +45,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "Sumador"
 Output Format                      : NGC
-Target Device                      : xc3s500e-4-fg320
+Target Device                      : xc3s100e-4-cp132
 
 ---- Source Options
 Top Module Name                    : Sumador
@@ -108,7 +108,8 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" in Library work.
-Architecture behavioral of Entity sumador is up to date.
+Entity <sumador> compiled.
+Entity <sumador> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -168,7 +169,7 @@ Optimizing unit <Sumador> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Sumador, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Sumador, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -216,12 +217,14 @@ Cell Usage :
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s500efg320-4 
+Selected Device : 3s100ecp132-4 
 
- Number of Slices:                       16  out of   4656     0%  
- Number of 4 input LUTs:                 32  out of   9312     0%  
+ Number of Slices:                       16  out of    960     1%  
+ Number of 4 input LUTs:                 32  out of   1920     1%  
  Number of IOs:                          96
- Number of bonded IOBs:                  96  out of    232    41%  
+ Number of bonded IOBs:                  96  out of     83   115% (*) 
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -314,15 +317,15 @@ Delay:               9.247ns (Levels of Logic = 35)
 =========================================================================
 
 
-Total REAL time to Xst completion: 27.00 secs
-Total CPU time to Xst completion: 23.09 secs
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 23.29 secs
  
 --> 
 
 
-Total memory usage is 168152 kilobytes
+Total memory usage is 168148 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
