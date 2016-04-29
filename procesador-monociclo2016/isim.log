@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/alucard/ise proyects/procesador-monociclo2016/registerFile_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/alucard/ise proyects/procesador-monociclo2016/registerFile_tb_isim_beh.wdb 
+Running: /home/alucard/ise proyects/procesador-monociclo2016/procesador_total16TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/alucard/ise proyects/procesador-monociclo2016/procesador_total16TB_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,5 +10,17 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_total16tb/uut/Inst_Sumador/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /procesador_total16tb/uut/Inst_InstructionMemory/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /procesador_total16tb/uut/Inst_RF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /procesador_total16tb/uut/Inst_RF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /procesador_total16tb/uut/Inst_RF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
+at 0 ps, Instance /procesador_total16tb/uut/Inst_InstructionMemory/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+ERROR: Index 32 out of bound 0 to 31. 
+ERROR: In process IM.vhd:38 
+ 
+INFO: Simulator is stopped.
+# run 100ns
+INFO: Simulator is stopped.
 # exit 0

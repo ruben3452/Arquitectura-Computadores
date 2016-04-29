@@ -3,22 +3,22 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
   
-ENTITY registerFile_tb IS
-END registerFile_tb;
+ENTITY RF_tb IS
+END RF_tb;
  
-ARCHITECTURE behavior OF registerFile_tb IS 
+ARCHITECTURE behavior OF RF_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT registerFile
+    COMPONENT RF
     PORT(
          clk : IN  std_logic;
-         rs1 : IN  std_logic_vector(5 downto 0);
-         rs2 : IN  std_logic_vector(5 downto 0);
-         rd : IN  std_logic_vector(5 downto 0);
-         wren : IN  std_logic;
+         Rs1 : IN  std_logic_vector(4 downto 0);
+         Rs2 : IN  std_logic_vector(4 downto 0);
+         Rd : IN  std_logic_vector(5 downto 0);
+         DWR : IN  std_logic_vector(31 downto 0);
 			reset : IN std_logic;
-         Dwr : IN  std_logic_vector(31 downto 0);
+         
          Crs1 : OUT  std_logic_vector(31 downto 0);
          Crs2 : OUT  std_logic_vector(31 downto 0)
         );
@@ -27,12 +27,12 @@ ARCHITECTURE behavior OF registerFile_tb IS
 
    --Inputs
    signal clk : std_logic := '0';
-   signal rs1 : std_logic_vector(5 downto 0) := (others => '0');
-   signal rs2 : std_logic_vector(5 downto 0) := (others => '0');
-   signal rd : std_logic_vector(5 downto 0) := (others => '0');
-   signal wren : std_logic := '0';
+   signal Rs1 : std_logic_vector(4 downto 0) := (others => '0');
+   signal Rs2 : std_logic_vector(4 downto 0) := (others => '0');
+   signal Rd : std_logic_vector(5 downto 0) := (others => '0');
+   signal DWR : std_logic_vector(31 downto 0) := (others => '0');
 	signal reset : std_logic := '0';
-   signal Dwr : std_logic_vector(31 downto 0) := (others => '0');
+   
 
  	--Outputs
    signal Crs1 : std_logic_vector(31 downto 0);
@@ -49,7 +49,7 @@ BEGIN
           rs1 => rs1,
           rs2 => rs2,
           rd => rd,
-          wren => wren,
+          
 			 reset => reset,
           Dwr => Dwr,
           Crs1 => Crs1,
@@ -74,23 +74,23 @@ BEGIN
 
       wait for clk_period*10;
 		
-		rs1 <="001000";
-		rs2 <="010000";
-		rd <="000110";
-		wren<='1';
-		dwr<="00000000000000000000000000000111";
+		Rs1 <="01000";
+		Rs2 <="10000";
+		Rd <="000110";
+		
+		DWR<="00000000000000000000000000000111";
 		wait for 5 ms;
 		
-		rs1 <="000110";
-		rs2 <="010000";
-		rd <="010000";
-		dwr<="00000000000000000000000000000011";
+		Rs1 <="00110";
+		Rs2 <="10000";
+		Rd <="010000";
+		DWR<="00000000000000000000000000000011";
 		wait for 5 ms;
 		
-		rs1 <="010000";
-		rs2 <="000000";
-		rd <="000000";
-		dwr<="00000011111111111111111110000000";
+		Rs1 <="10000";
+		Rs2 <="00000";
+		Rd <="000000";
+		DWR<="00000011111111111111111110000000";
 		wait for 5 ms;
 		
 		

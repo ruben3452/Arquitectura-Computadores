@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/alucard/ise proyects/procesador-monociclo2016/registerFile_tb_isim_beh.exe" -prj "/home/alucard/ise proyects/procesador-monociclo2016/registerFile_tb_beh.prj" "registerFile_tb" 
+-intstyle "ise" -incremental -o "/home/alucard/ise proyects/procesador-monociclo2016/procesador_total16TB_isim_beh.exe" -prj "/home/alucard/ise proyects/procesador-monociclo2016/procesador_total16TB_beh.prj" "work.procesador_total16TB" 

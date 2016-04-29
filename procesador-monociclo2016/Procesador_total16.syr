@@ -1,0 +1,1226 @@
+Release 14.7 - xst P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.62 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.63 secs
+ 
+--> 
+Reading design: Procesador_total16.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Procesador_total16.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Procesador_total16"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : Procesador_total16
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" in Library work.
+Architecture behavioral of Entity sumador is up to date.
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/npc.vhd" in Library work.
+Architecture behavioral of Entity programcounter is up to date.
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" in Library work.
+Entity <instructionmemory> compiled.
+Entity <instructionmemory> (Architecture <arqinstructionmemory>) compiled.
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/RF.vhd" in Library work.
+Architecture behavioral of Entity rf is up to date.
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/SEU.vhd" in Library work.
+Architecture behavioral of Entity seu is up to date.
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/CU.vhd" in Library work.
+Entity <cu> compiled.
+Entity <cu> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/MUX.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "/home/alucard/ise proyects/procesador-monociclo2016/procesador-monosiclo16.vhd" in Library work.
+Entity <procesador_total16> compiled.
+Entity <procesador_total16> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Procesador_total16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sumador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ProgramCounter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <InstructionMemory> in library <work> (architecture <arqinstructionmemory>).
+
+Analyzing hierarchy for entity <RF> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SEU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Alu> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Procesador_total16> in library <work> (Architecture <behavioral>).
+Entity <Procesador_total16> analyzed. Unit <Procesador_total16> generated.
+
+Analyzing Entity <Sumador> in library <work> (Architecture <behavioral>).
+Entity <Sumador> analyzed. Unit <Sumador> generated.
+
+Analyzing Entity <ProgramCounter> in library <work> (Architecture <behavioral>).
+Entity <ProgramCounter> analyzed. Unit <ProgramCounter> generated.
+
+Analyzing Entity <InstructionMemory> in library <work> (Architecture <arqinstructionmemory>).
+WARNING:Xst:790 - "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" line 44: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <instructions> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <InstructionMemory> analyzed. Unit <InstructionMemory> generated.
+
+Analyzing Entity <RF> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/alucard/ise proyects/procesador-monociclo2016/RF.vhd" line 31: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <registers>
+Entity <RF> analyzed. Unit <RF> generated.
+
+Analyzing Entity <SEU> in library <work> (Architecture <behavioral>).
+Entity <SEU> analyzed. Unit <SEU> generated.
+
+Analyzing Entity <CU> in library <work> (Architecture <behavioral>).
+Entity <CU> analyzed. Unit <CU> generated.
+
+Analyzing Entity <MUX> in library <work> (Architecture <behavioral>).
+Entity <MUX> analyzed. Unit <MUX> generated.
+
+Analyzing Entity <Alu> in library <work> (Architecture <behavioral>).
+Entity <Alu> analyzed. Unit <Alu> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <registers<0>> in unit <RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <Sumador>.
+    Related source file is "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd".
+    Found 32-bit adder for signal <Result>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Sumador> synthesized.
+
+
+Synthesizing Unit <ProgramCounter>.
+    Related source file is "/home/alucard/ise proyects/procesador-monociclo2016/npc.vhd".
+    Found 32-bit register for signal <Pc_Out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <ProgramCounter> synthesized.
+
+
+Synthesizing Unit <InstructionMemory>.
+    Related source file is "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd".
+WARNING:Xst:647 - Input <address<31:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <instructions> is used but never assigned. Tied to default value.
+    Found 32x32-bit ROM for signal <$varindex0000> created at line 44.
+    Summary:
+	inferred   1 ROM(s).
+Unit <InstructionMemory> synthesized.
+
+
+Synthesizing Unit <RF>.
+    Related source file is "/home/alucard/ise proyects/procesador-monociclo2016/RF.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registers_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 39.
+    Found 32-bit 32-to-1 multiplexer for signal <$varindex0001> created at line 40.
+    Summary:
+	inferred  64 Multiplexer(s).
+Unit <RF> synthesized.
+
+
+Synthesizing Unit <SEU>.
+    Related source file is "/home/alucard/ise proyects/procesador-monociclo2016/SEU.vhd".
+Unit <SEU> synthesized.
+
+
+Synthesizing Unit <CU>.
+    Related source file is "/home/alucard/ise proyects/procesador-monociclo2016/CU.vhd".
+Unit <CU> synthesized.
+
+
+Synthesizing Unit <MUX>.
+    Related source file is "/home/alucard/ise proyects/procesador-monociclo2016/MUX.vhd".
+Unit <MUX> synthesized.
+
+
+Synthesizing Unit <Alu>.
+    Related source file is "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <AluResult>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit addsub for signal <AluResult$mux0001>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Alu> synthesized.
+
+
+Synthesizing Unit <Procesador_total16>.
+    Related source file is "/home/alucard/ise proyects/procesador-monociclo2016/procesador-monosiclo16.vhd".
+Unit <Procesador_total16> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 2
+ 32-bit register                                       : 2
+# Latches                                              : 32
+ 32-bit latch                                          : 32
+# Multiplexers                                         : 2
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <Pc_Out_5> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_6> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_7> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_8> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_9> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_10> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_11> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_12> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_13> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_14> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_15> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_16> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_17> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_18> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_19> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_20> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_21> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_22> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_23> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_24> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_25> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_26> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_27> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_28> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_29> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_30> of sequential type is unconnected in block <Inst_ProgramCounter>.
+WARNING:Xst:2677 - Node <Pc_Out_31> of sequential type is unconnected in block <Inst_ProgramCounter>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+# Latches                                              : 32
+ 32-bit latch                                          : 32
+# Multiplexers                                         : 2
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Procesador_total16> ...
+
+Optimizing unit <ProgramCounter> ...
+
+Optimizing unit <RF> ...
+WARNING:Xst:1293 - FF/Latch <Inst_RF/registers_26_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_26_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_31_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_30_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_8_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_28_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_29_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_9_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_27_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_12_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_13_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_10_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_11_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_24_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_25_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_14_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_0> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_1> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_2> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_3> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_4> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_5> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_6> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_7> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_8> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_9> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_10> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_11> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_12> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_13> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_14> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_15> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_16> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_17> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_18> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_19> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_20> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_21> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_22> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_23> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_24> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_25> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_26> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_27> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_28> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_29> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_30> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RF/registers_15_31> has a constant value of 0 in block <Procesador_total16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_31> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_30> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_29> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_28> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_27> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_26> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_25> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_24> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_23> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_22> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_21> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_20> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_19> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_18> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_17> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_16> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_15> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_14> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_13> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_12> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_11> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_10> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_9> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_8> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_7> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_6> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_ProgramCounter/Pc_Out_5> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_31> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_30> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_29> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_28> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_27> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_26> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_25> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_24> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_23> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_22> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_21> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_20> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_19> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_18> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_17> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_16> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_15> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_14> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_13> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_12> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_11> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_10> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_9> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_8> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_7> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_6> of sequential type is unconnected in block <Procesador_total16>.
+WARNING:Xst:2677 - Node <Inst_NProgramCounter/Pc_Out_5> of sequential type is unconnected in block <Procesador_total16>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Procesador_total16, actual ratio is 57.
+Latch Inst_Alu/AluResult_31 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_30 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_29 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_28 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_27 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_26 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_25 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_24 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_23 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_22 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_21 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_20 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_19 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_18 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_17 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_16 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_15 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_14 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_13 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_12 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_11 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_10 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_9 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_8 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_7 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_6 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_5 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_4 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_3 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_2 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch Inst_Alu/AluResult_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Procesador_total16.ngr
+Top Level Output File Name         : Procesador_total16
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 1075
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 4
+#      LUT2                        : 34
+#      LUT3                        : 142
+#      LUT4                        : 303
+#      MUXCY                       : 35
+#      MUXF5                       : 197
+#      MUXF6                       : 128
+#      MUXF7                       : 128
+#      MUXF8                       : 64
+#      VCC                         : 1
+#      XORCY                       : 37
+# FlipFlops/Latches                : 330
+#      FDC                         : 10
+#      LDC                         : 256
+#      LDCP_1                      : 64
+# Clock Buffers                    : 10
+#      BUFG                        : 9
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 1
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      430  out of    960    44%  
+ Number of Slice Flip Flops:            298  out of   1920    15%  
+ Number of 4 input LUTs:                484  out of   1920    25%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of     83    40%  
+    IOB Flip Flops:                      32
+ Number of GCLKs:                        10  out of     24    41%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------+---------------------------------+-------+
+Clock Signal                                                        | Clock buffer(FF name)           | Load  |
+--------------------------------------------------------------------+---------------------------------+-------+
+Inst_Alu/AluResult_not00011(Inst_Alu/AluResult_not0001:O)           | BUFG(*)(Inst_Alu/AluResult_0)   | 64    |
+ClK                                                                 | BUFGP                           | 10    |
+Inst_RF/registers_1_cmp_eq00001(Inst_RF/registers_1_cmp_eq00001:O)  | BUFG(*)(Inst_RF/registers_1_31) | 32    |
+Inst_RF/registers_2_cmp_eq00001(Inst_RF/registers_2_cmp_eq00001:O)  | BUFG(*)(Inst_RF/registers_2_31) | 32    |
+Inst_RF/registers_20_cmp_eq00001(Inst_RF/registers_20_cmp_eq00001:O)| BUFG(*)(Inst_RF/registers_20_31)| 32    |
+Inst_RF/registers_16_cmp_eq00001(Inst_RF/registers_16_cmp_eq00001:O)| BUFG(*)(Inst_RF/registers_16_31)| 32    |
+Inst_RF/registers_21_cmp_eq00001(Inst_RF/registers_21_cmp_eq00001:O)| BUFG(*)(Inst_RF/registers_21_31)| 32    |
+Inst_RF/registers_17_cmp_eq00001(Inst_RF/registers_17_cmp_eq00001:O)| BUFG(*)(Inst_RF/registers_17_31)| 32    |
+Inst_RF/registers_22_cmp_eq00001(Inst_RF/registers_22_cmp_eq00001:O)| BUFG(*)(Inst_RF/registers_22_31)| 32    |
+Inst_RF/registers_18_cmp_eq00001(Inst_RF/registers_18_cmp_eq00001:O)| BUFG(*)(Inst_RF/registers_18_31)| 32    |
+--------------------------------------------------------------------+---------------------------------+-------+
+(*) These 9 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------+---------------------------+-------+
+Control Signal                          | Buffer(FF name)           | Load  |
+----------------------------------------+---------------------------+-------+
+Reset                                   | IBUF                      | 266   |
+Inst_Alu/AluResult_0__and0000(XST_GND:G)| NONE(Inst_Alu/AluResult_0)| 128   |
+----------------------------------------+---------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.611ns (Maximum Frequency: 276.932MHz)
+   Minimum input arrival time before clock: 15.685ns
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ClK'
+  Clock period: 3.611ns (frequency: 276.932MHz)
+  Total number of paths / destination ports: 20 / 10
+-------------------------------------------------------------------------
+Delay:               3.611ns (Levels of Logic = 5)
+  Source:            Inst_NProgramCounter/Pc_Out_1 (FF)
+  Destination:       Inst_NProgramCounter/Pc_Out_4 (FF)
+  Source Clock:      ClK rising
+  Destination Clock: ClK rising
+
+  Data Path: Inst_NProgramCounter/Pc_Out_1 to Inst_NProgramCounter/Pc_Out_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  Inst_NProgramCounter/Pc_Out_1 (Inst_NProgramCounter/Pc_Out_1)
+     LUT1:I0->O            1   0.704   0.000  Inst_Sumador/Madd_Result_cy<1>_rt (Inst_Sumador/Madd_Result_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Inst_Sumador/Madd_Result_cy<1> (Inst_Sumador/Madd_Result_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Sumador/Madd_Result_cy<2> (Inst_Sumador/Madd_Result_cy<2>)
+     MUXCY:CI->O           0   0.059   0.000  Inst_Sumador/Madd_Result_cy<3> (Inst_Sumador/Madd_Result_cy<3>)
+     XORCY:CI->O           1   0.804   0.000  Inst_Sumador/Madd_Result_xor<4> (SalidaSumador<4>)
+     FDC:D                     0.308          Inst_NProgramCounter/Pc_Out_4
+    ----------------------------------------
+    Total                      3.611ns (2.989ns logic, 0.622ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_Alu/AluResult_not00011'
+  Total number of paths / destination ports: 48226 / 64
+-------------------------------------------------------------------------
+Offset:              15.685ns (Levels of Logic = 43)
+  Source:            Reset (PAD)
+  Destination:       Inst_Alu/AluResult_31 (LATCH)
+  Destination Clock: Inst_Alu/AluResult_not00011 rising
+
+  Data Path: Reset to Inst_Alu/AluResult_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           335   1.218   1.533  Reset_IBUF (Reset_IBUF)
+     LUT4:I0->O          275   0.704   1.418  Inst_MUX/tmp<2>11 (N3)
+     LUT3:I1->O           64   0.704   1.447  Inst_InstructionMemory/outInstruction<0>2 (RegistroSalida<0>)
+     LUT3:I0->O            1   0.704   0.000  Inst_RF/Mmux__varindex0001_81 (Inst_RF/Mmux__varindex0001_81)
+     MUXF5:I0->O           1   0.321   0.000  Inst_RF/Mmux__varindex0001_6_f5_0 (Inst_RF/Mmux__varindex0001_6_f51)
+     MUXF6:I1->O           1   0.521   0.000  Inst_RF/Mmux__varindex0001_5_f6 (Inst_RF/Mmux__varindex0001_5_f6)
+     MUXF7:I0->O           1   0.521   0.000  Inst_RF/Mmux__varindex0001_3_f7 (Inst_RF/Mmux__varindex0001_3_f7)
+     MUXF8:I1->O           1   0.521   0.499  Inst_RF/Mmux__varindex0001_2_f8 (Inst_RF/_varindex0001<0>)
+     LUT4:I1->O            1   0.704   0.000  Inst_MUX/tmp<0>2 (Inst_MUX/tmp<0>1)
+     MUXF5:I0->O           1   0.321   0.499  Inst_MUX/tmp<0>_f5 (SalidaRs2<0>)
+     LUT3:I1->O            1   0.704   0.000  Inst_Alu/Maddsub_AluResult_mux0001_lut<0> (Inst_Alu/Maddsub_AluResult_mux0001_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<0> (Inst_Alu/Maddsub_AluResult_mux0001_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<1> (Inst_Alu/Maddsub_AluResult_mux0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<2> (Inst_Alu/Maddsub_AluResult_mux0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<3> (Inst_Alu/Maddsub_AluResult_mux0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<4> (Inst_Alu/Maddsub_AluResult_mux0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<5> (Inst_Alu/Maddsub_AluResult_mux0001_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<6> (Inst_Alu/Maddsub_AluResult_mux0001_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<7> (Inst_Alu/Maddsub_AluResult_mux0001_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<8> (Inst_Alu/Maddsub_AluResult_mux0001_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<9> (Inst_Alu/Maddsub_AluResult_mux0001_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<10> (Inst_Alu/Maddsub_AluResult_mux0001_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<11> (Inst_Alu/Maddsub_AluResult_mux0001_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<12> (Inst_Alu/Maddsub_AluResult_mux0001_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<13> (Inst_Alu/Maddsub_AluResult_mux0001_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<14> (Inst_Alu/Maddsub_AluResult_mux0001_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<15> (Inst_Alu/Maddsub_AluResult_mux0001_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<16> (Inst_Alu/Maddsub_AluResult_mux0001_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<17> (Inst_Alu/Maddsub_AluResult_mux0001_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<18> (Inst_Alu/Maddsub_AluResult_mux0001_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<19> (Inst_Alu/Maddsub_AluResult_mux0001_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<20> (Inst_Alu/Maddsub_AluResult_mux0001_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<21> (Inst_Alu/Maddsub_AluResult_mux0001_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<22> (Inst_Alu/Maddsub_AluResult_mux0001_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<23> (Inst_Alu/Maddsub_AluResult_mux0001_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<24> (Inst_Alu/Maddsub_AluResult_mux0001_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<25> (Inst_Alu/Maddsub_AluResult_mux0001_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<26> (Inst_Alu/Maddsub_AluResult_mux0001_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<27> (Inst_Alu/Maddsub_AluResult_mux0001_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<28> (Inst_Alu/Maddsub_AluResult_mux0001_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<29> (Inst_Alu/Maddsub_AluResult_mux0001_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Inst_Alu/Maddsub_AluResult_mux0001_cy<30> (Inst_Alu/Maddsub_AluResult_mux0001_cy<30>)
+     XORCY:CI->O           2   0.804   0.000  Inst_Alu/Maddsub_AluResult_mux0001_xor<31> (Inst_Alu/AluResult_mux0001<31>)
+     LDCP_1:D                  0.308          Inst_Alu/AluResult_31
+    ----------------------------------------
+    Total                     15.685ns (10.289ns logic, 5.396ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_Alu/AluResult_not00011'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            Inst_Alu/AluResult_31_1 (LATCH)
+  Destination:       AluResult<31> (PAD)
+  Source Clock:      Inst_Alu/AluResult_not00011 rising
+
+  Data Path: Inst_Alu/AluResult_31_1 to AluResult<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP_1:G->Q           1   0.676   0.420  Inst_Alu/AluResult_31_1 (Inst_Alu/AluResult_31_1)
+     OBUF:I->O                 3.272          AluResult_31_OBUF (AluResult<31>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 160.00 secs
+Total CPU time to Xst completion: 155.88 secs
+ 
+--> 
+
+
+Total memory usage is 236284 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  630 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

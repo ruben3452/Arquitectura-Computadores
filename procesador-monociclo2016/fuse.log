@@ -1,24 +1,41 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/alucard/ise proyects/procesador-monociclo2016/registerFile_tb_isim_beh.exe -prj /home/alucard/ise proyects/procesador-monociclo2016/registerFile_tb_beh.prj registerFile_tb 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/alucard/ise proyects/procesador-monociclo2016/procesador_total16TB_isim_beh.exe -prj /home/alucard/ise proyects/procesador-monociclo2016/procesador_total16TB_beh.prj work.procesador_total16TB 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/sumador.vhd" into library work
+Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/SEU.vhd" into library work
 Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/RF.vhd" into library work
-Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/RF-TB.vhd" into library work
+Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/npc.vhd" into library work
+Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/MUX.vhd" into library work
+Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/IM.vhd" into library work
+Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/CU.vhd" into library work
+Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/Alu.vhd" into library work
+Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/procesador-monosiclo16.vhd" into library work
+Parsing VHDL file "/home/alucard/ise proyects/procesador-monociclo2016/procesador_total16TB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 37532 KB
-Fuse CPU Usage: 3180 ms
+Fuse Memory Usage: 38064 KB
+Fuse CPU Usage: 3230 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
-Compiling architecture syn of entity registerFile [registerfile_default]
-Compiling architecture behavior of entity registerfile_tb
+Compiling package textio
+Compiling architecture behavioral of entity Sumador [sumador_default]
+Compiling architecture behavioral of entity ProgramCounter [programcounter_default]
+Compiling architecture arqinstructionmemory of entity instructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity RF [rf_default]
+Compiling architecture behavioral of entity SEU [seu_default]
+Compiling architecture behavioral of entity CU [cu_default]
+Compiling architecture behavioral of entity MUX [mux_default]
+Compiling architecture behavioral of entity Alu [alu_default]
+Compiling architecture behavioral of entity Procesador_total16 [procesador_total16_default]
+Compiling architecture behavior of entity procesador_total16tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 7 VHDL Units
-Built simulation executable /home/alucard/ise proyects/procesador-monociclo2016/registerFile_tb_isim_beh.exe
-Fuse Memory Usage: 90708 KB
-Fuse CPU Usage: 3580 ms
-GCC CPU Usage: 1100 ms
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 24 VHDL Units
+Built simulation executable /home/alucard/ise proyects/procesador-monociclo2016/procesador_total16TB_isim_beh.exe
+Fuse Memory Usage: 93192 KB
+Fuse CPU Usage: 3730 ms
+GCC CPU Usage: 3330 ms

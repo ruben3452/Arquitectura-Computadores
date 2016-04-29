@@ -1,0 +1,709 @@
+Release 14.7 Map P.20131013 (lin)
+Xilinx Mapping Report File for Design 'Procesador_total16'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
+-c 100 -o Procesador_total16_map.ncd Procesador_total16.ngd
+Procesador_total16.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon Apr 25 16:35:53 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Total Number Slice Registers:         234 out of   1,920   12%
+    Number used as Flip Flops:           10
+    Number used as Latches:             224
+  Number of 4 input LUTs:               476 out of   1,920   24%
+Logic Distribution:
+  Number of occupied Slices:            580 out of     960   60%
+    Number of Slices containing only related logic:     580 out of     580 100%
+    Number of Slices containing unrelated logic:          0 out of     580   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         480 out of   1,920   25%
+    Number used as logic:               476
+    Number used as a route-thru:          4
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 34 out of      83   40%
+    IOB Latches:                         32
+  Number of BUFGMUXs:                     8 out of      24   33%
+
+Average Fanout of Non-Clock Nets:                3.10
+
+Peak Memory Usage:  173 MB
+Total REAL time to MAP completion:  14 secs 
+Total CPU time to MAP completion:   12 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 256 block(s) removed
+   2 block(s) optimized away
+ 256 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "Inst_RF/Mmux__varindex0000_5_f61" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_0" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f51" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_0" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_91" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_91" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_84" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_84" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f52" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_1" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_83" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_83" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f611" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_10" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f516" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_15" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_921" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_921" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_834" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_834" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f517" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_16" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_833" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_833" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f613" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_12" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f519" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_18" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_925" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_925" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_840" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_840" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f520" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_19" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_839" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_839" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f615" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_14" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f522" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_21" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_929" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_929" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_846" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_846" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f523" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_22" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_845" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_845" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f617" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_16" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f525" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_24" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_933" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_933" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_852" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_852" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f526" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_25" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_851" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_851" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f619" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_18" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f528" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_27" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_937" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_937" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_858" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_858" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f529" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_28" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_857" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_857" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f621" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_20" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f531" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_30" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_941" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_941" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_864" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_864" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f532" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_31" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_863" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_863" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f623" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_22" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f534" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_33" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_945" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_945" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_870" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_870" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f535" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_34" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_869" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_869" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f625" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_24" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f537" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_36" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_949" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_949" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_876" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_876" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f538" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_37" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_875" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_875" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f627" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_26" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f540" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_39" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_953" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_953" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_882" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_882" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f541" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_40" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_881" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_881" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f629" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_28" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f543" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_42" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_957" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_957" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_888" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_888" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f544" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_43" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_887" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_887" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f63" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_2" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f54" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_3" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_95" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_95" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_810" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_810" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f55" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_4" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_89" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_89" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f631" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_30" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f546" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_45" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_961" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_961" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_894" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_894" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f547" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_46" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_893" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_893" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f633" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_32" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f549" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_48" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_965" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_965" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8100" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8100" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f550" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_49" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_899" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_899" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f635" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_34" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f552" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_51" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_969" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_969" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8106" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8106" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f553" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_52" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8105" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8105" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f637" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_36" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f555" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_54" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_973" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_973" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8112" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8112" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f556" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_55" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8111" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8111" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f639" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_38" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f558" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_57" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_977" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_977" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8118" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8118" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f559" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_58" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8117" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8117" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f641" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_40" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f561" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_60" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_981" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_981" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8124" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8124" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f562" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_61" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8123" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8123" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f643" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_42" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f564" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_63" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_985" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_985" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8130" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8130" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f565" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_64" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8129" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8129" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f645" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_44" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f567" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_66" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_989" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_989" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8136" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8136" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f568" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_67" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8135" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8135" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f647" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_46" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f570" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_69" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_993" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_993" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8142" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8142" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f571" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_70" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8141" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8141" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f649" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_48" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f573" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_72" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_997" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_997" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8148" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8148" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f574" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_73" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8147" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8147" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f65" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_4" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f57" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_6" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_99" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_99" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_816" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_816" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f58" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_7" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_815" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_815" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f651" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_50" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f576" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_75" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_9101" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_9101" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8154" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8154" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f577" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_76" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8153" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8153" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f653" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_52" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f579" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_78" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_9105" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_9105" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8160" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8160" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f580" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_79" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8159" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8159" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f655" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_54" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f582" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_81" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_9109" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_9109" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8166" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8166" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f583" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_82" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8165" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8165" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f657" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_56" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f585" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_84" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_9113" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_9113" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8172" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8172" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f586" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_85" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8171" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8171" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f659" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_58" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f588" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_87" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_9117" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_9117" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8178" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8178" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f589" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_88" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8177" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8177" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f661" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_60" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f591" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_90" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_9121" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_9121" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8184" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8184" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f592" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_91" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8183" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8183" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f663" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_62" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f594" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_93" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_9125" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_9125" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8190" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8190" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f595" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_94" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_8189" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_8189" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f67" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_6" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f510" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_9" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_913" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_913" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_822" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_822" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f511" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_10" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_821" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_821" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_5_f69" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_5_f6_8" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_7_f513" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_7_f5_12" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_917" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_917" (ROM) removed.
+    The signal "Inst_RF/Mmux__varindex0000_828" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_828" (ROM) removed.
+  The signal "Inst_RF/Mmux__varindex0000_6_f514" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_6_f5_13" (MUX) removed.
+    The signal "Inst_RF/Mmux__varindex0000_827" is unused and has been removed.
+     Unused block "Inst_RF/Mmux__varindex0000_827" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f511" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_10" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_914" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_914" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f514" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_13" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_918" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_918" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f517" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_16" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_922" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_922" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f52" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_1" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_92" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_92" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f520" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_19" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_926" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_926" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f523" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_22" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_930" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_930" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f526" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_25" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_934" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_934" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f529" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_28" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_938" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_938" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f532" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_31" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_942" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_942" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f535" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_34" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_946" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_946" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f538" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_37" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_950" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_950" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f541" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_40" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_954" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_954" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f544" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_43" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_958" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_958" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f547" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_46" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_962" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_962" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f55" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_4" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_96" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_96" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f550" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_49" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_966" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_966" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f553" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_52" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_970" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_970" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f556" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_55" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_974" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_974" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f559" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_58" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_978" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_978" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f562" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_61" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_982" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_982" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f565" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_64" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_986" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_986" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f568" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_67" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_990" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_990" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f571" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_70" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_994" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_994" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f574" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_73" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_998" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_998" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f577" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_76" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_9102" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_9102" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f58" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_7" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_910" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_910" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f580" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_79" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_9106" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_9106" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f583" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_82" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_9110" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_9110" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f586" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_85" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_9114" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_9114" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f589" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_88" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_9118" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_9118" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f592" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_91" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_9122" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_9122" (ROM) removed.
+The signal "Inst_RF/Mmux__varindex0000_7_f595" is unused and has been removed.
+ Unused block "Inst_RF/Mmux__varindex0000_7_f5_94" (MUX) removed.
+  The signal "Inst_RF/Mmux__varindex0000_9126" is unused and has been removed.
+   Unused block "Inst_RF/Mmux__varindex0000_9126" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AluResult<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<2>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<3>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<4>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<5>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<6>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<7>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<8>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<9>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<10>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<11>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<12>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<13>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<14>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<15>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<16>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<17>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<18>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<19>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<20>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<21>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<22>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<23>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<24>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<25>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<26>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<27>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<28>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<29>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<30>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AluResult<31>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| ClK                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Reset                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
